@@ -5,4 +5,5 @@
             <argument name="resource" xsi:type="object">AHT\Blog\Model\ResourceModel\Post</argument>
         </arguments>
     </type>
+    <preference for="Magento\Contact\Block\ContactForm" type="AHT\Blog\Block\ContactForm" />
 </config>

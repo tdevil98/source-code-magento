@@ -1,0 +1,29 @@
+<?php
+$productCollection = $block->getCategoryProducts(30);
+$mediaUrl = $block->getProductUrlImage();
+?>
+<h1><?= $block->getTitle(30); ?></h1>
+<ul class="my-list">
+    <?php
+    foreach ($productCollection as $product) {
+        echo '<li><img src="' . $mediaUrl . $product->getData()['small_image'] . '" alt="Image 1"></li>';
+    }
+    ?>
+</ul>
+
+<script>
+    require([
+        "jquery",
+        "slick"
+    ], function ($) {
+        $(document).ready(function () {
+            $(".my-list").slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 1
+            });
+        });
+    });
+</script>
