@@ -1,14 +1,18 @@
 <?php
 
-namespace AHT\JsModule\Block;
+namespace AHT\JsModule\Block\Widget;
 /**
  * Promo block
  */
-class Block extends \Magento\Framework\View\Element\Template
+use Magento\Framework\View\Element\Template;
+use Magento\Widget\Block\BlockInterface;
+
+class Block extends Template implements BlockInterface
 {
     protected $context;
     protected $_categoryFactory;
     protected $storeManager;
+    protected $_template = "widget/promo.phtml";
 
     public function __construct(
         \Magento\Backend\Block\Template\Context $context,
@@ -47,4 +51,5 @@ class Block extends \Magento\Framework\View\Element\Template
         $category->load($categoryId);
         return "List product of " . $category->getName();
     }
+
 }

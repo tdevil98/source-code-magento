@@ -1,0 +1,40 @@
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="AHT\JsModule\Block\Widget\Block" id="orange_test_widget">
+        <label>Config Js Widget</label>
+        <description>This is a config js widget!!!</description>
+        <parameters>
+            <parameter name="dots" xsi:type="select" visible="true" required="true" sort_order="20">
+                <label translate="true">Dots</label>
+                <options>
+                    <option name="true" value="true">
+                        <label>True</label>
+                    </option>
+                    <option name="false" value="false" selected="true">
+                        <label>False</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="infinite" xsi:type="select" visible="true" required="true" sort_order="20">
+                <label translate="true">Infinite</label>
+                <options>
+                    <option name="true" value="true">
+                        <label>True</label>
+                    </option>
+                    <option name="false" value="false" selected="true">
+                        <label>False</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="speed" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Speed</label>
+            </parameter>
+            <parameter name="slidesToShow" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Slides to show</label>
+            </parameter>
+            <parameter name="slidesToScroll" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Slides to scroll</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

@@ -18,11 +18,11 @@ $mediaUrl = $block->getProductUrlImage();
     ], function ($) {
         $(document).ready(function () {
             $(".my-list").slick({
-                dots: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 4,
-                slidesToScroll: 1
+                dots: <?= $block->escapeHtml($block->getData('dots')) ?>,
+                infinite: <?= $block->escapeHtml($block->getData('infinite')) ?>,
+                speed: <?= $block->escapeHtml($block->getData('speed')) ?>,
+                slidesToShow: <?= $block->escapeHtml($block->getData('slidesToShow')) ?>,
+                slidesToScroll: <?= $block->escapeHtml($block->getData('slidesToScroll')) ?>
             });
         });
     });
