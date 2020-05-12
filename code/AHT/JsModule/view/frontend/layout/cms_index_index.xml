@@ -5,8 +5,8 @@
         <css src="AHT_JsModule::css/source/slick-theme.css"/>
     </head>
     <body>
-        <referenceContainer name="main.content">
-            <block class="AHT\JsModule\Block\Widget\Block" name="block_config_js"/>
-        </referenceContainer>
+<!--        <referenceContainer name="main.content">-->
+<!--            <block class="AHT\JsModule\Block\Widget\Block" name="block_config_js"/>-->
+<!--        </referenceContainer>-->
     </body>
 </page>
