@@ -1,12 +1,12 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <!-- Add local resources -->
-
+        <css src="css/custom.css" />
         <!-- The following two ways to add local JavaScript files are equal -->
 
         <!-- Add external resources -->
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900" rel="stylesheet" />
+        <link src="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900" src_type="url" rel="stylesheet" />
     </head>
 </page>
