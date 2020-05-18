@@ -1,17 +1,13 @@
 <?xml version="1.0"?>
-<!--
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
--->
-<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <update handle="default_head_blocks"/>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="after.body.start">
-            <container name="top.sale" as="top.sale" label="Top Sale" htmlTag="div" htmlClass="top-sale">
-                <block class="Magento\Framework\View\Element\Template" name="top-sale" template="Magento_Theme::top-sale.phtml" before="-"/>
+        <referenceContainer name="header.container">
+            <container name="promo-top" as="promo-top" label="Promo Top" htmlTag="div" htmlClass="promo-top" before="-">
+                <block class="Magento\Framework\View\Element\Template" name="promo-top-page" template="Magento_Theme::promo.phtml"/>
             </container>
+        </referenceContainer>
+        <referenceContainer name="footer-container">
+            <referenceBlock name="copyright" remove="true"/>
         </referenceContainer>
     </body>
 </page>

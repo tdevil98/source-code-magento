@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header.container">
+            <referenceContainer name="header.panel.wrapper">
+                <referenceContainer name="header.panel">
+                    <container name="explore.top" label="Explore Top" htmlTag="div" htmlClass="explore-top" before="-">
+                        <block class="Magento\Framework\View\Element\Template" name="explore_top_template" template="Magento_Theme::explore.phtml"/>
+                    </container>
+                </referenceContainer>
+            </referenceContainer>
+            <referenceContainer name="header-wrapper">
+                <block class="Magento\Framework\View\Element\Template" name="contact.header" before="logo" template="Magento_Theme::header/contact.phtml"/>
+            </referenceContainer>
+            <container name="promo.top" label="Promo Top" htmlTag="div" htmlClass="promo-top" before="-">
+                <block class="Magento\Framework\View\Element\Template" name="promo_top_page" template="Magento_Theme::promo.phtml"/>
+            </container>
+        </referenceContainer>
+        <referenceContainer name="footer-container">
+            <referenceBlock name="copyright" remove="true"/>
+        </referenceContainer>
+    </body>
+</page>

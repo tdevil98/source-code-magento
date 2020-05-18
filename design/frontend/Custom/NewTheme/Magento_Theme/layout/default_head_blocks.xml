@@ -2,22 +2,17 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <link src="Magento_Theme::favicon-32x32.png" rel="icon" sizes="32x32" />
-<!--        <css src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" src_type="url" />-->
-<!--        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" src_type="url" />-->
-<!--        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>-->
         <link rel="stylesheet" type="text/css" src="http://fonts.googleapis.com/css?family=Montserrat" ie_condition="IE 9" src_type="url" />
+        <css src="https://use.fontawesome.com/releases/v5.7.1/css/all.css" src_type="url"/>
+        <css src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" src_type="url"/>
+        <css src="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" src_type="url"/>
 
+        <script src="https://use.fontawesome.com/b633d3ee54.js"></script>
         <!-- This will create a tag like '<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">' -->
         <meta name="x_ua_compatible" content="IE=edge,chrome=1"/>
         <!-- This will create a tag like '<meta property="og:type" content="article"/>'' -->
         <meta name="og:type" content="article"/>
         <!-- This will create a tag like '<meta charset="UTF-8">' -->
         <meta name="charset" content="UTF-8"/>
-        <!-- This will create a tag like '<meta http-equiv="Content-Type" content="content-type-value"/>' -->
-        <meta name="content_type" content="content-type-value"/>
-        <!-- This tag will not render (see \Magento\Framework\View\Page\Config\Renderer for details) -->
-        <meta name="media_type" content="any-value"/>
-        <!-- This will create a tag like '<meta name="my_custom_type" content="my_custom_value"/>' -->
-        <meta name="my_custom_type" content="my_custom_value"/>
     </head>
 </page>

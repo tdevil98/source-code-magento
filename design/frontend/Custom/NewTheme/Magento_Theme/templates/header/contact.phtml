@@ -1,0 +1,11 @@
+<div class="contact-header">
+    <i class="icon fas fa-phone-alt"></i>
+    <div class="content-contact-header">
+        <?php
+        echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('phone-number-block')->toHtml();
+        ?>
+        <?php
+        echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('email-block')->toHtml();
+        ?>
+    </div>
+</div>

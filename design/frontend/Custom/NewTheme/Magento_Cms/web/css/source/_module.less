@@ -1,0 +1,62 @@
+@main-color: #ff6633;
+
+& when (@media-common = true) {
+
+    // Header Link
+    .page-header .panel.wrapper {
+        background-color: white !important;
+        color: black!important;
+        border: none!important;
+
+        & .header.panel {
+            & .explore-top{
+                & a{
+                    color: @main-color;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                display: inline-block;
+            }
+            & .header.links {
+                & li {
+                    & a {
+                        color: black!important;
+                    }
+
+                    & span button {
+                        & span {
+                            color: black!important;
+                        }
+
+                        &:after {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header.content{
+        width:100%;
+        text-align:center;
+        & .contact-header {
+            display: flex;
+            float: left;
+            align-items: center;
+            text-align: left;
+            & .icon{
+                font-size: 30px;
+            }
+        }
+        & .logo{
+            float: none;
+            display: inline-block;
+            margin:0 auto;
+        }
+        & .minicart-wrapper{
+            float: right;
+        }
+    }
+
+}
