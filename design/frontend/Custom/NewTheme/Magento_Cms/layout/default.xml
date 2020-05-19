@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <move element="catalog.topnav" destination="menu-search" before="-" />
+        <move element="top.search" destination="menu-search" after="-" />
+        <referenceContainer name="page.top">
+            <container name="menu-search" htmlTag="div" htmlClass="menu-search" after="-" />
+        </referenceContainer>
+    </body>
+</page>

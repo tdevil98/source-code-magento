@@ -1,8 +1,6 @@
-@main-color: #ff6633;
-
 & when (@media-common = true) {
 
-    // Header Link
+    // Header
     .page-header .panel.wrapper {
         background-color: white !important;
         color: black!important;
@@ -23,12 +21,10 @@
                     & a {
                         color: black!important;
                     }
-
                     & span button {
                         & span {
                             color: black!important;
                         }
-
                         &:after {
                             color: black;
                         }
@@ -47,6 +43,7 @@
             text-align: left;
             & .icon{
                 font-size: 30px;
+                margin-right: 10px;
             }
         }
         & .logo{
@@ -56,6 +53,20 @@
         }
         & .minicart-wrapper{
             float: right;
+        }
+    }
+
+    //Menu
+    .menu-search{
+        position: relative;
+        border-top: 1px solid #666666;
+        & .block-search{
+            position: absolute;
+            right: 9%;
+            top: 15%;
+        }
+        & .navigation{
+            background: none;
         }
     }
 
