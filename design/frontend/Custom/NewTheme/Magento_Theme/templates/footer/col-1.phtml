@@ -1,0 +1,25 @@
+<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer-logo-block')->toHtml(); ?>
+<div class="row">
+    <div class="col-3">
+        <p>ADD</p>
+    </div>
+    <div class="col-9">
+        <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('address-block')->toHtml(); ?>
+    </div>
+    <div class="col-3">
+        <p>PHONE</p>
+    </div>
+    <div class="col-9">
+        <a href="tel:<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('phone-number-block')->toHtml(); ?>">
+            <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('phone-number-block')->toHtml(); ?>
+        </a>
+    </div>
+    <div class="col-3">
+        <p>EMAIL</p>
+    </div>
+    <div class="col-9">
+        <a href="mailto:<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('mail-block')->toHtml(); ?>">
+            <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('mail-block')->toHtml(); ?>
+        </a>
+    </div>
+</div>

@@ -1,16 +1,43 @@
 & when (@media-common = true) {
     // Header
 
-    // Promo
-    .promo-content{
-        color: @main-color;
-        background-image: url('../images/background-top.png');
-        background-size: cover;
-        text-align: center;
-        & p{
-            padding: 20px 0;
-            margin: 0;
-            font-size: 18px;
+        // Promo
+        .promo-content{
+            color: @main-color;
+            background-image: url('../images/background-top.png');
+            background-size: cover;
+            text-align: center;
+            & p{
+                padding: 20px 0;
+                margin: 0;
+                font-size: 18px;
+            }
+        }
+
+    //Footer
+    .page-footer{
+        & .footer.content{
+            & .footer-links{
+                & .popular-tags{
+                    & p{
+                        & a{
+                            color: #afafaf;
+                            border: 1px solid;
+                            padding: 8px;
+                            border: 1px solid #ccc;
+                            display: inline-block;
+                            margin: 3px;
+                            padding: 8px 10px;
+                            box-sizing: border-box;
+                            vertical-align: middle;
+                            &:hover{
+                                color: #afafaf;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
