@@ -18,6 +18,8 @@
     .page-footer{
         & .footer.content{
             & .footer-links{
+                border-bottom: 1px solid gray;
+                margin-top: 30px;
                 & .popular-tags{
                     & p{
                         & a{
@@ -33,6 +35,61 @@
                             &:hover{
                                 color: #afafaf;
                                 text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                & .services{
+                    & .service-footer{
+                        margin-bottom: 28px;
+                        & .icon-footer{
+                            border: 1px solid gray;
+                            border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            & img{
+                                width: 100%;
+                                padding: 15px;
+                            }
+                        }
+                    }
+                }
+                & .contact-us{
+                    & .contact-top{
+                        margin-bottom: 52px;
+                        & .social-network{
+                            padding: 3px;
+                            display: inline-block;
+                            border: 1px solid gray;
+                            border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            & .link{
+                                text-align: center;
+                                padding: 5px;
+                                & i{
+                                    width: 15px;
+                                    height: 15px;
+                                }
+                            }
+                        }
+                    }
+                    & .newsletter-container{
+                        & .block.newsletter{
+                            max-width: 100%;
+                            float: none;
+                            & input{
+                                padding-left: 12px;
+                            }
+                            & .title{
+                                display: block;
+                            }
+                            & .content{
+                                & .control{
+                                    &::before{
+                                        content: none;
+                                    }
+                                }
                             }
                         }
                     }

@@ -21,27 +21,35 @@
         <referenceContainer name="footer-container">
             <referenceContainer name="footer">
                 <container name="footer-wrap" htmlTag="div" htmlClass="row is-flex footer-links">
-                    <container name="footer_col_1" htmlTag="div" htmlClass="info-footer col-xs-12 col-sm-3 col-md-3">
+                    <container name="footer_col_1" htmlTag="div" htmlClass="info-footer col-xs-12 col-sm-6 col-xl-3">
                         <block class="Magento\Framework\View\Element\Template" name="footer.col.1" before="-"
                                template="Magento_Theme::footer/col-1.phtml"/>
                     </container>
-                    <container name="footer_col_2" htmlTag="div" htmlClass="popular-tags col-xs-12 col-sm-3 col-md-3">
+                    <container name="footer_col_2" htmlTag="div" htmlClass="popular-tags col-xs-12 col-sm-6 col-xl-3">
                         <block class="Magento\Framework\View\Element\Template" name="footer.col.2" before="-"
                                template="Magento_Theme::footer/col-2.phtml"/>
                     </container>
-                    <container name="footer_col_3" htmlTag="div" htmlClass="col-xs-12 col-sm-3 footer-col col-md-3">
+                    <container name="footer_col_3" htmlTag="div" htmlClass="services col-xs-12 col-sm-6 col-xl-3">
+                        <block class="Magento\Framework\View\Element\Template" name="footer.col.3" before="-"
+                                template="Magento_Theme::footer/col-3.phtml"/>
                     </container>
-                    <container name="footer_col_4" htmlTag="div" htmlClass="col-xs-12 col-sm-3 footer-col col-md-3">
+                    <container name="footer_col_4" htmlTag="div" htmlClass="contact-us col-xs-12 col-sm-6 col-xl-3">
+                        <block class="Magento\Framework\View\Element\Template" name="footer.col.4" before="-"
+                                template="Magento_Theme::footer/col-4.phtml"/>
+                        <container name="newsletter-container" htmlTag="div" htmlClass="newsletter-container" after="-">
+                        </container>
                     </container>
                     <container name="footer_col_5" htmlTag="div"
                                htmlClass="col-xs-12 margintop-30sm footer-col col-md-3 col-md-offset-1">
                     </container>
                 </container>
-                <!--                <block class="Magento\Theme\Block\Html\Footer" name="footer-custom" template="Magento_Theme::html/footer.phtml"/>-->
+                <container name="payment-footer" htmlTag="div" htmlClass="payment" after="-">
+                    <block class="Magento\Framework\View\Element\Template" name="payment" template="Magento_Theme::footer/payment.phtml" />
+                </container>
                 <referenceBlock name="footer_links" remove="true"/>
             </referenceContainer>
             <referenceBlock name="copyright" remove="true"/>
         </referenceContainer>
-        <move element="form.subscribe" destination="footer_col_4" before="-"/>
+        <move element="form.subscribe" destination="newsletter-container" after="-"/>
     </body>
 </page>
