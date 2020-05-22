@@ -1,6 +1,78 @@
 & when (@media-common = true) {
     // Header
+    .page-header .panel.wrapper {
+        background-color: white !important;
+        color: black!important;
+        border: none!important;
 
+        & .header.panel {
+            & .explore-top{
+                & a{
+                    color: @main-color;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                display: inline-block;
+            }
+            & .header.links {
+                & li {
+                    & a {
+                        color: black!important;
+                    }
+                    & span button {
+                        & span {
+                            color: black!important;
+                        }
+                        &:after {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header.content{
+        width:100%;
+        text-align:center;
+        & .contact-header {
+            display: flex;
+            float: left;
+            align-items: center;
+            text-align: left;
+            & .content-contact-header{
+                & a{
+                    color: #666;
+                }
+            }
+            & .icon{
+                font-size: 30px;
+                margin-right: 10px;
+            }
+        }
+        & .logo{
+            float: none;
+            display: inline-block;
+            margin:0 auto;
+        }
+        & .minicart-wrapper{
+            float: right;
+        }
+    }
+
+        //Menu
+        .menu-search{
+            position: relative;
+            border-top: 1px solid #666;
+            & .block-search{
+                position: absolute;
+                right: 9%;
+                top: 15%;
+            }
+            & .navigation{
+                background: none;
+            }
+        }
         // Promo
         .promo-content{
             color: @main-color;
@@ -14,16 +86,22 @@
             }
         }
 
+        
     //Footer
     .page-footer{
         & .footer.content{
             & .footer-links{
                 border-bottom: 1px solid gray;
                 margin-top: 30px;
+                & .info-footer{
+                    & a{
+                        color: #000;
+                    }
+                }
                 & .popular-tags{
                     & p{
                         & a{
-                            color: #afafaf;
+                            color: #666;
                             border: 1px solid;
                             padding: 8px;
                             border: 1px solid #ccc;
@@ -64,6 +142,12 @@
                             border-radius: 50%;
                             -moz-border-radius: 50%;
                             -webkit-border-radius: 50%;
+                            & a{
+                                color: #999;
+                                &:hover{
+                                    color: #666;
+                                }
+                            }
                             & .link{
                                 text-align: center;
                                 padding: 5px;
@@ -76,6 +160,7 @@
                     }
                     & .newsletter-container{
                         & .block.newsletter{
+                            width: 100%;
                             max-width: 100%;
                             float: none;
                             & input{
@@ -86,6 +171,9 @@
                             }
                             & .content{
                                 & .control{
+                                    & label{
+                                        width: 100%;
+                                    }
                                     &::before{
                                         content: none;
                                     }
@@ -93,6 +181,28 @@
                             }
                         }
                     }
+                }
+            }
+            & .footer-bottom{
+                color: #666;
+                margin: 30px auto;
+                text-align: center;
+                & a{
+                    color: #666;
+                    &:hover{
+                        color: #000;
+                    }
+                }
+            }
+            & .copyright{
+                margin-bottom: 20px;
+                background-color: inherit;
+                color: #666;
+            }
+            & .payment{
+                text-align: center;
+                & a{
+                    margin: 0 10px;
                 }
             }
         }

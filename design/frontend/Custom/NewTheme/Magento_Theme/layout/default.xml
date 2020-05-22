@@ -39,17 +39,18 @@
                         <container name="newsletter-container" htmlTag="div" htmlClass="newsletter-container" after="-">
                         </container>
                     </container>
-                    <container name="footer_col_5" htmlTag="div"
-                               htmlClass="col-xs-12 margintop-30sm footer-col col-md-3 col-md-offset-1">
-                    </container>
+                </container>
+                <container name="footer_bottom" htmlTag="div" htmlClass="footer-bottom">
+                    <block class="Magento\Framework\View\Element\Template" name="footer.bottom" after="-"
+                        template="Magento_Theme::footer/bottom.phtml"/>
                 </container>
                 <container name="payment-footer" htmlTag="div" htmlClass="payment" after="-">
                     <block class="Magento\Framework\View\Element\Template" name="payment" template="Magento_Theme::footer/payment.phtml" />
                 </container>
                 <referenceBlock name="footer_links" remove="true"/>
             </referenceContainer>
-            <referenceBlock name="copyright" remove="true"/>
         </referenceContainer>
         <move element="form.subscribe" destination="newsletter-container" after="-"/>
+        <move element="copyright" destination="footer" after="footer_bottom" />
     </body>
 </page>
