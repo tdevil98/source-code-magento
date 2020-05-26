@@ -1,0 +1,18 @@
+<?php
+    echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-top-block')->toHtml();
+?>
+<h1>Hihi</h1>
+<script>
+    require([
+        'jquery',
+        'owlcarousel'
+    ], function ($) {
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true
+            });
+        });
+    });
+</script>

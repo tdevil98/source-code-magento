@@ -1,10 +1,10 @@
 var config = {
-    paths: {            
-            'owlcarousel': "js/owlcarousel"
-        },   
+    paths: {
+        owlcarousel: 'js/owl.carousel'
+    },
     shim: {
-        'owlcarousel': {
+        owlcarousel: {
             deps: ['jquery']
         }
-    }
+      }
 };

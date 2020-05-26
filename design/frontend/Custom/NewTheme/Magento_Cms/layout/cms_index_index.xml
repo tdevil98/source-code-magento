@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-    
+        <referenceContainer name="main.content" htmlTag="main" htmlClass="page-main-full-width" >
+        <referenceContainer name="columns" remove="true" />
+            <container name="banner-top" htmlTag="div" htmlClass="banner-top">
+                <block class="Magento\Framework\View\Element\Template" template="Magento_Cms::banner/banner-top.phtml" />
+            </container>
+        </referenceContainer>
+        <referenceContainer name="columns.top">
+            <referenceBlock name="page.main.title" remove="true" />
+        </referenceContainer>
     </body>
 </page>
